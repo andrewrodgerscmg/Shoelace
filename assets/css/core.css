@@ -1,0 +1,102 @@
+/**********************************************************************************
+
+ client:                CLIENT NAME
+ author:                @AndrewRodgers / Weber Shandwick
+ date created:          Today's Date
+ date modified:         Today's Date
+ description:           Core Style Sheet for PROJECT NAME
+ 
+ 
+ Credit where credit is due:
+ CSS, JavaScript and Framework are based on:
+ 
+ Bootstrap, from Twitter
+ Simple and flexible HTML, CSS, and Javascript 
+ for popular user interface components and interactions.
+ http://twitter.github.com/bootstrap/index.html
+ 
+ Font Awesome
+ the iconic font designed for use with Twitter Bootstrap
+ @fortaweso_me
+ 
+ 320 and Up
+ Developed by Andy Clarke and Keith Clark: 
+ http://www.stuffandnonsense.co.uk/projects/320andup/
+ 
+ Notes:
+ 
+ 
+***********************************************************************************/
+/* !Template Navigation - Remove From Live CSS */
+/* ----------------------------------------------- */
+.template-nav{
+    display: block;
+    position: absolute;
+    top: 200px;
+    font-size: 32px;
+    color:#fff;
+    z-index: 1000;
+}
+.template-nav:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.template-nav-next{
+    right: 0;
+}
+.template-nav-prev{
+    left: 0;
+}
+/* !Patches to Bootstrap */
+/* ------------------------------------------------------------------------ */
+
+/* !Patches From HTML5 Boilerplate Reset to Bootstrap Reset */
+/* -------------------------------------------------------- */
+/* !Patch from h5bp.com/i/440 and h5bp.com/d to remove space bewtween borders */
+img { vertical-align: middle; }
+
+/* !Patch to Correct overflow not hidden in IE9 */
+svg:not(:root){ overflow: hidden; }
+
+/* !Patch Remove text-shadow in selection highlight: h5bp.com/i
+    These selection declarations have to be separate */
+::-moz-selection { background: #539BC5; color: #fff; text-shadow: none; }
+::selection { background: #539BC5; color: #fff; text-shadow: none; }
+
+/* !Patch Indicate that 'label' will shift focus to the associated form element */
+label{ cursor: pointer; }
+
+/* !Patch Helper Classes From HTML5 Boilerplate Reset */
+/* -------------------------------------------------- */
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* apply a natural box layout model to all container elements */
+.container, .row, .container-fluid,.row-fluid{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* !Global Styles */
+/* ----------------------------------------------- */
+
+/* !Layout by Pages (320px by Defualt - See !Media Queries for larger displays) */
+/* ---------------------------------------------------------------------------- */
+
+/* !Media Queries */
+/* ----------------------------------------------- */
+/* !480px Landscape phones and down */
+@media (max-width: 480px) { ... }
+/* !End 480px Media Query */
+
+/* !767px Landscape phone to portrait tablet */
+@media (max-width: 767px) { ... }
+/* !End 767px Media Query */
+
+/* !768px Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+/* !End 768px Media Query */
+
+/* !1200px Large desktop */
+@media (min-width: 1200px) { ... }
+/* !End 1200px Media Query */
