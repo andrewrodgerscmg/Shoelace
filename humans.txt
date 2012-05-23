@@ -1,0 +1,27 @@
+/*  CREDIT WHERE CREDIT IS DUE */
+
+    CSS, JavaScript and Framework are based on:
+
+    HTML5 Boilerplate:
+    A rock-solid default for HTML5 awesome.
+    http://html5boilerplate.com/
+
+    Bootstrap, from Twitter:
+    Simple and flexible HTML, CSS, and Javascript 
+    for popular user interface components and interactions.
+    http://twitter.github.com/bootstrap/index.html
+
+    Font Awesomer, a fork of Font Awesome:
+    the iconic font designed for use with Twitter Bootstrap
+    @fortaweso_me
+
+    320 and Up:
+    Developed by Andy Clarke and Keith Clark: 
+    http://www.stuffandnonsense.co.uk/projects/320andup/
+
+/*  SITE */
+
+    Last update: Today's Date
+    Author: @AndrewRodgers
+    Doctype: HTML5
+    IDE: Coda, Transmit, SourceTree, Photoshop
