@@ -9,58 +9,17 @@
  notes:                 
  
 ***********************************************************************************/
+
 /* !Template Navigation - Remove From Live CSS */
-/* ----------------------------------------------- */
-.template-nav{
-    display: block;
-    position: absolute;
-    top: 200px;
-    font-size: 32px;
-    color:#fff;
-    z-index: 1000;
-}
-.template-nav:hover{
-    color: #fff;
-    text-decoration: none;
-}
-.template-nav-next{
-    right: 0;
-}
-.template-nav-prev{
-    left: 0;
-}
+/* ----------------------------------------------------------------------------- */
+@import url(template-nav.css);
+
 /* !Patches to Bootstrap */
-/* ------------------------------------------------------------------------ */
-
-/* !Patches From HTML5 Boilerplate Reset to Bootstrap Reset */
-/* -------------------------------------------------------- */
-/* !Patch from h5bp.com/i/440 and h5bp.com/d to remove space bewtween borders */
-img { vertical-align: middle; }
-
-/* !Patch to Correct overflow not hidden in IE9 */
-svg:not(:root){ overflow: hidden; }
-
-/* !Patch Remove text-shadow in selection highlight: h5bp.com/i
-    These selection declarations have to be separate */
-::-moz-selection { background: #539BC5; color: #fff; text-shadow: none; }
-::selection { background: #539BC5; color: #fff; text-shadow: none; }
-
-/* !Patch Indicate that 'label' will shift focus to the associated form element */
-label{ cursor: pointer; }
-
-/* !Patch Helper Classes From HTML5 Boilerplate Reset */
-/* -------------------------------------------------- */
-/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
-.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-
-/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
-
-/* apply a natural box layout model to all container elements */
-.container, .row, .container-fluid,.row-fluid{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/* ----------------------*/
+@import url(patches.css);
 
 /* !Global Styles */
-/* ----------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
 
 /* !Layout by Pages (320px by Defualt - See !Media Queries for larger displays) */
 /* ---------------------------------------------------------------------------- */
