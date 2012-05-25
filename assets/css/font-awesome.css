@@ -1,0 +1,252 @@
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
+    http://creativecommons.org/licenses/by/3.0/ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    GitHub: https://github.com/FortAwesome/Font-Awesome
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: http://lemonwi.se co-founder
+    
+    Notes
+    -------------------------------------------------------
+    Forked: https://github.com/andrewrodgerscmg/Font-Awesome
+    !Forked by @AndrewRodgers to work WITH Bootstrap 
+    instead of replacing their icons glyphs.
+    Modified to use font-icon- to apply Font Awesome
+*/
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../font/fontawesome-webfont.eot');
+    src: url('../font/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../font/fontawesome-webfont.woff') format('woff'), url('../font/fontawesome-webfont.ttf') format('truetype'), url('../font/fontawesome-webfont.svgz#FontAwesomeRegular') format('svg'), url('../font/fontawesome-webfont.svg#FontAwesomeRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* sprites.less reset */
+/* !Modified: Do not reset kind sir */
+/*
+[class^="font-icon"], [class*=" font-icon"] {
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: inherit;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+}
+li[class^="font-icon"], li[class*=" font-icon"] {
+    display: block;
+}
+*/
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+    /* !Modified: icons applied using "font-icon" */
+[class^="font-icon"]:before, [class*=" font-icon"]:before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    /* !This unifies vertical alignment across browsers. */
+    display: inline;
+    /* !Who wants underlines beneath icons? No one. */
+    text-decoration: none;
+}
+a [class^="font-icon"], a [class*=" font-icon"] {
+    display: inline-block;
+    text-decoration: inherit;
+}
+/* makes the font 33% larger relative to the icon container */
+.icon-large:before {
+    vertical-align: top;
+    font-size: 1.3333333333333333em;
+}
+.btn [class^="font-icon"], .btn [class*=" font-icon"] {
+    /* keeps button heights with and without icons the same */
+    line-height: .9em;
+}
+li [class^="font-icon"], li [class*=" font-icon"] {
+    display: inline-block;
+    width: 1.25em;
+    text-align: center;
+}
+li .icon-large[class^="font-icon"], li .icon-large[class*=" font-icon"] {
+    /* 1.5 increased font size for icon-large * 1.25 width */
+    width: 1.875em;
+}
+li[class^="font-icon"], li[class*=" font-icon"] {
+    margin-left: 0;
+    list-style-type: none;
+}
+li[class^="font-icon"]:before, li[class*=" font-icon"]:before {
+    text-indent: -2em;
+    text-align: center;
+}
+li[class^="font-icon"].icon-large:before, li[class*=" font-icon"].icon-large:before {
+    text-indent: -1.3333333333333333em;
+}
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+.font-icon-glass:before              { content: "\f000"; }
+.font-icon-music:before              { content: "\f001"; }
+.font-icon-search:before             { content: "\f002"; }
+.font-icon-envelope:before           { content: "\f003"; }
+.font-icon-heart:before              { content: "\f004"; }
+.font-icon-star:before               { content: "\f005"; }
+.font-icon-star-empty:before         { content: "\f006"; }
+.font-icon-user:before               { content: "\f007"; }
+.font-icon-film:before               { content: "\f008"; }
+.font-icon-th-large:before           { content: "\f009"; }
+.font-icon-th:before                 { content: "\f00a"; }
+.font-icon-th-list:before            { content: "\f00b"; }
+.font-icon-ok:before                 { content: "\f00c"; }
+.font-icon-remove:before             { content: "\f00d"; }
+.font-icon-zoom-in:before            { content: "\f00e"; }
+
+.font-icon-zoom-out:before           { content: "\f010"; }
+.font-icon-off:before                { content: "\f011"; }
+.font-icon-signal:before             { content: "\f012"; }
+.font-icon-cog:before                { content: "\f013"; }
+.font-icon-trash:before              { content: "\f014"; }
+.font-icon-home:before               { content: "\f015"; }
+.font-icon-file:before               { content: "\f016"; }
+.font-icon-time:before               { content: "\f017"; }
+.font-icon-road:before               { content: "\f018"; }
+.font-icon-download-alt:before       { content: "\f019"; }
+.font-icon-download:before           { content: "\f01a"; }
+.font-icon-upload:before             { content: "\f01b"; }
+.font-icon-inbox:before              { content: "\f01c"; }
+.font-icon-play-circle:before        { content: "\f01d"; }
+.font-icon-repeat:before             { content: "\f01e"; }
+
+/* \f020 is not a valid unicode character. all shifted one down */
+.font-icon-refresh:before            { content: "\f021"; }
+.font-icon-list-alt:before           { content: "\f022"; }
+.font-icon-lock:before               { content: "\f023"; }
+.font-icon-flag:before               { content: "\f024"; }
+.font-icon-headphones:before         { content: "\f025"; }
+.font-icon-volume-off:before         { content: "\f026"; }
+.font-icon-volume-down:before        { content: "\f027"; }
+.font-icon-volume-up:before          { content: "\f028"; }
+.font-icon-qrcode:before             { content: "\f029"; }
+.font-icon-barcode:before            { content: "\f02a"; }
+.font-icon-tag:before                { content: "\f02b"; }
+.font-icon-tags:before               { content: "\f02c"; }
+.font-icon-book:before               { content: "\f02d"; }
+.font-icon-bookmark:before           { content: "\f02e"; }
+.font-icon-print:before              { content: "\f02f"; }
+
+.font-icon-camera:before             { content: "\f030"; }
+.font-icon-font:before               { content: "\f031"; }
+.font-icon-bold:before               { content: "\f032"; }
+.font-icon-italic:before             { content: "\f033"; }
+.font-icon-text-height:before        { content: "\f034"; }
+.font-icon-text-width:before         { content: "\f035"; }
+.font-icon-align-left:before         { content: "\f036"; }
+.font-icon-align-center:before       { content: "\f037"; }
+.font-icon-align-right:before        { content: "\f038"; }
+.font-icon-align-justify:before      { content: "\f039"; }
+.font-icon-list:before               { content: "\f03a"; }
+.font-icon-indent-left:before        { content: "\f03b"; }
+.font-icon-indent-right:before       { content: "\f03c"; }
+.font-icon-facetime-video:before     { content: "\f03d"; }
+.font-icon-picture:before            { content: "\f03e"; }
+
+.font-icon-pencil:before             { content: "\f040"; }
+.font-icon-map-marker:before         { content: "\f041"; }
+.font-icon-adjust:before             { content: "\f042"; }
+.font-icon-tint:before               { content: "\f043"; }
+.font-icon-edit:before               { content: "\f044"; }
+.font-icon-share:before              { content: "\f045"; }
+.font-icon-check:before              { content: "\f046"; }
+.font-icon-move:before               { content: "\f047"; }
+.font-icon-step-backward:before      { content: "\f048"; }
+.font-icon-fast-backward:before      { content: "\f049"; }
+.font-icon-backward:before           { content: "\f04a"; }
+.font-icon-play:before               { content: "\f04b"; }
+.font-icon-pause:before              { content: "\f04c"; }
+.font-icon-stop:before               { content: "\f04d"; }
+.font-icon-forward:before            { content: "\f04e"; }
+
+.font-icon-fast-forward:before       { content: "\f050"; }
+.font-icon-step-forward:before       { content: "\f051"; }
+.font-icon-eject:before              { content: "\f052"; }
+.font-icon-chevron-left:before       { content: "\f053"; }
+.font-icon-chevron-right:before      { content: "\f054"; }
+.font-icon-plus-sign:before          { content: "\f055"; }
+.font-icon-minus-sign:before         { content: "\f056"; }
+.font-icon-remove-sign:before        { content: "\f057"; }
+.font-icon-ok-sign:before            { content: "\f058"; }
+.font-icon-question-sign:before      { content: "\f059"; }
+.font-icon-info-sign:before          { content: "\f05a"; }
+.font-icon-screenshot:before         { content: "\f05b"; }
+.font-icon-remove-circle:before      { content: "\f05c"; }
+.font-icon-ok-circle:before          { content: "\f05d"; }
+.font-icon-ban-circle:before         { content: "\f05e"; }
+
+.font-icon-arrow-left:before         { content: "\f060"; }
+.font-icon-arrow-right:before        { content: "\f061"; }
+.font-icon-arrow-up:before           { content: "\f062"; }
+.font-icon-arrow-down:before         { content: "\f063"; }
+.font-icon-share-alt:before          { content: "\f064"; }
+.font-icon-resize-full:before        { content: "\f065"; }
+.font-icon-resize-small:before       { content: "\f066"; }
+.font-icon-plus:before               { content: "\f067"; }
+.font-icon-minus:before              { content: "\f068"; }
+.font-icon-asterisk:before           { content: "\f069"; }
+.font-icon-exclamation-sign:before   { content: "\f06a"; }
+.font-icon-gift:before               { content: "\f06b"; }
+.font-icon-leaf:before               { content: "\f06c"; }
+.font-icon-fire:before               { content: "\f06d"; }
+.font-icon-eye-open:before           { content: "\f06e"; }
+
+.font-icon-eye-close:before          { content: "\f070"; }
+.font-icon-warning-sign:before       { content: "\f071"; }
+.font-icon-plane:before              { content: "\f072"; }
+.font-icon-calendar:before           { content: "\f073"; }
+.font-icon-random:before             { content: "\f074"; }
+.font-icon-comment:before            { content: "\f075"; }
+.font-icon-magnet:before             { content: "\f076"; }
+.font-icon-chevron-up:before         { content: "\f077"; }
+.font-icon-chevron-down:before       { content: "\f078"; }
+.font-icon-retweet:before            { content: "\f079"; }
+.font-icon-shopping-cart:before      { content: "\f07a"; }
+.font-icon-folder-close:before       { content: "\f07b"; }
+.font-icon-folder-open:before        { content: "\f07c"; }
+.font-icon-resize-vertical:before    { content: "\f07d"; }
+.font-icon-resize-horizontal:before  { content: "\f07e"; }
+
+.font-icon-bar-chart:before          { content: "\f080"; }
+.font-icon-twitter-sign:before       { content: "\f081"; }
+.font-icon-facebook-sign:before      { content: "\f082"; }
+.font-icon-camera-retro:before       { content: "\f083"; }
+.font-icon-key:before                { content: "\f084"; }
+.font-icon-cogs:before               { content: "\f085"; }
+.font-icon-comments:before           { content: "\f086"; }
+.font-icon-thumbs-up:before          { content: "\f087"; }
+.font-icon-thumbs-down:before        { content: "\f088"; }
+.font-icon-star-half:before          { content: "\f089"; }
+.font-icon-heart-empty:before        { content: "\f08a"; }
+.font-icon-signout:before            { content: "\f08b"; }
+.font-icon-linkedin-sign:before      { content: "\f08c"; }
+.font-icon-pushpin:before            { content: "\f08d"; }
+.font-icon-external-link:before      { content: "\f08e"; }
+
+.font-icon-signin:before             { content: "\f090"; }
+.font-icon-trophy:before             { content: "\f091"; }
+.font-icon-github-sign:before        { content: "\f092"; }
+.font-icon-upload-alt:before         { content: "\f093"; }
+.font-icon-lemon:before              { content: "\f094"; }

@@ -13,7 +13,7 @@
     position: absolute;
     top: 200px;
     font-size: 32px;
-    color:#fff;
+    color:#000000;
     z-index: 1000;
 }
 .template-nav:hover{
