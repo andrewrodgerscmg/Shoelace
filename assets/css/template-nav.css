@@ -13,11 +13,11 @@
     position: absolute;
     top: 200px;
     font-size: 32px;
-    color:#000000;
+    color:#000;
     z-index: 1000;
 }
 .template-nav:hover{
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 .template-nav-next{

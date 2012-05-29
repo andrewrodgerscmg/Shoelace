@@ -23,7 +23,9 @@
 @import url(font-awesome.css);
 /* !Global Styles */
 /* ---------------------------------------------------------------------------- */
-
+body{
+    background-color: #fff;
+}
 /* !Layout by Pages (320px by Defualt - See !Media Queries for larger displays) */
 /* ---------------------------------------------------------------------------- */
 
